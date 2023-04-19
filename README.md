@@ -1,2 +1,2 @@
-# lumia-cypress-tester-new
-Demo of Github actions with cypress and cucumber
+# lumia-cypress-tester
+ Demo of Github actions with cypress + cucumber
