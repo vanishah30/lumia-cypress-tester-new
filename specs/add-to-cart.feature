@@ -16,3 +16,5 @@ Feature: Add to cart
       | Bordslampa | 2        |
       | Golvlampa  | 1        |
       | Golvlampa  | 3        |
+
+      
