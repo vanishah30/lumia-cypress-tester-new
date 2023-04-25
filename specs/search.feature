@@ -34,6 +34,13 @@ Scenario: Searching for products including "m"
     And I should see the product "Taklampa"
     And I should see the product "Lampett"
     And I should see the product "Bordslampa"
+    #And the following related results are shown
+            #| related       |
+            #| Taklampa |
+            #| Lampett  |
+            #| Bordslampa  |
+
+
 
     
            
