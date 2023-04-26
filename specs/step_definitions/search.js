@@ -20,3 +20,14 @@ Then('I should see the product {string}', (productName) => {
     .should('be.visible');
 });
 
+Then("the following related results are shown", (table) => {
+  // Needed to get actual data from a row table
+  let products = table.rawTable.map(x => x[0]);
+  for (let product of products) {
+    cy.log("product", product);
+    cy.get('div.product h2')
+      .contains(product)
+      .parents('div.product')
+      .should('be.visible');
+  }
+})
