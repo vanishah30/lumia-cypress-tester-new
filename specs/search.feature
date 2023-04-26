@@ -6,15 +6,21 @@ Feature: Search
         Given that I am on the start page
         When I enter the letter "t" in the search field
         Then I should see the product "Taklampa"
-        And I should see the product "Spotlight"
-        And I should see the product "Lampett"
+        And the following related results are shown
+            | Spotlight |
+            | Lampett   |
+
 
     Scenario: Searching for products including "l"
         Given that I am on the start page
         When I enter the letter "l" in the search field
         Then I should see the product "Bordslampa"
-        And I should see the product "Golvlampa"
-        And I should see the product "Spotlight"
+        And the following related results are shown
+            | Taklampa  |
+            | Lampett   |
+            | Golvlampa |
+            | Spotlight |
+
 
     Scenario: Searching for products including "s"
         Given that I am on the start page
@@ -31,9 +37,6 @@ Feature: Search
         Given that I am on the start page
         When I enter the letter "m" in the search field
         Then I should see the product "Golvlampa"
-        #And I should see the product "Taklampa"
-        #And I should see the product "Lampett"
-        #And I should see the product "Bordslampa"
         And the following related results are shown
             | Taklampa   |
             | Lampett    |
